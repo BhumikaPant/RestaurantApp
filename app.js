@@ -66,7 +66,7 @@ function auth(req,res,next){
   }
 }
 else{
-  if(req.signedCookie.user==='admin'){
+  if(req.signedCookies.user==='admin'){
     next();
   }
   else{
